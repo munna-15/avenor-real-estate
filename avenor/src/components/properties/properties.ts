@@ -57,7 +57,7 @@ export const properties = [
     description:
       "A residential retreat defined by mature greenery, open living spaces and a softer connection to the surrounding neighbourhood.",
     image:
-      "https://images.unsplash.com/photo-1686164748261-33e13eef70b6?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1686164748261-33e13eef70b6?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90b3dfaWQwfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     number: "06",
@@ -71,4 +71,6 @@ export const properties = [
     image:
       "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=3200&q=95",
   },
-] as const;
+];
+
+export type Property = (typeof properties)[number];

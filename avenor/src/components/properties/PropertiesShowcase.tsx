@@ -1,16 +1,7 @@
 "use client";
 
 import PropertySection from "./PropertySection";
-
-type Property = {
-  number: string;
-  category: string;
-  title: string;
-  location: string;
-  details: string;
-  description: string;
-  image: string;
-};
+import type { Property } from "./properties";
 
 type PropertiesShowcaseProps = {
   properties: Property[];
@@ -29,7 +20,6 @@ export default function PropertiesShowcase({
     <div className="relative bg-[#f4f1eb]">
       {properties.map((property, index) => {
         const backgroundIndex = index < 2 ? 0 : index < 4 ? 1 : 2;
-
         const isLast = index === properties.length - 1;
 
         return (
